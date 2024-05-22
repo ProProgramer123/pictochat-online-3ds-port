@@ -263,19 +263,7 @@
         <div id="main-settings" style="transform: scale(1.67188);">
         
             <h1 id="logo" onclick="sounds.error.play()" title="Click to join PictoChat Session!" alt="Connect to PictoChat" style="margin-top: 18.5938px;">PictoChat</h1> <html>
-  <head>
-
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-  </head>
-  <body>
-    <form action="" method="POST">
-     
-      <div class="h-captcha" id="captcha" data-sitekey="985b9d70-7a74-46a2-975a-a74a5c2aa84f"></div>
-      <br />
-
-    </form>
-  </body>
-</html>
+ 
             <div class="intro-text">Username:</div>
             <input type="text" id="name_box" spellcheck="false" maxlength="10" onkeyup="fixUserbox(this)">
             <div class="intro-text">Color:</div>
@@ -376,7 +364,7 @@
         object.value = object.value.replace(/[^\w\s]/gi, '');
     }
 
-    let token = false; // set this to true if no captcha
+    let token = true; // set this to true if no captcha
 
     function setVerificationToken(t) {
         token = t;
