@@ -1,4 +1,4 @@
-# Pictochat Online
+# Pictochat Online For 3DS
 
 Pictochat for the Nintendo DS & DSi, recreated for browsers!
 
@@ -38,3 +38,7 @@ To make tripcodes unique and reduce the risk of cracking, in the `settings.json`
 ### The captcha
 To use the captcha, set the `secret` in the settings.json to your Cloudflare Turnstile captcha secret.
 To disable the captcha entirely, edit the `www/index.html` file and search for `let token = false;` and change it to `let token = true;`. Then, remove or comment out the `<div id="captcha" ...` element and the `<script src="https://challenges.cloudflare.com/ ...` element.
+
+### Discord
+https://discord.gg/4ebf3YFz7B
+This invite will never expire.
