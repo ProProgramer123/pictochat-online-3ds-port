@@ -88,7 +88,8 @@
             margin: 0;
             font-size: 16px;
             overflow: hidden;
-        }
+            font-family: Montserrat;
+      }
 
         #root {
             margin-left: auto;
@@ -140,7 +141,7 @@
         input[type=text] {
             display: inline-block;
             border: 1px solid black;
-            font-family: nds;
+            font-family: Montserrat;
             font-size: 62.5%;
             border-radius: 0;
             padding-left: 2px;
@@ -166,7 +167,7 @@
         }
 
         .intro-text {
-            font-family: nds;
+            font-family: Montserrat;
             font-size: 10px;
             width: 93px;
             text-align: left;
@@ -206,8 +207,8 @@
             position: relative;
             bottom: -150px;
             width: 90px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 50px;
+            margin-right: au50;
         }
 
         html.dark body, html.dark iframe[title*="hCaptcha"], html.dark #captcha, html.dark .pcr-app, html.dark .pcr-button, html.dark .adsbygoogle, html.dark #arc-widget-container {
@@ -235,32 +236,46 @@
               width: 50vw !important;
               height: 120px !important;
             }
-        }
+          
+          .h-captcha {
+          height: 40px;
+          }
+        
+        
     </style>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
+
+  
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
 
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8642450972689048" crossorigin="anonymous"></script>
-<!-- sidebar ads -->
-<ins class="adsbygoogle" data-ad-client="ca-pub-8642450972689048" data-ad-slot="7747878839" data-ad-format="auto" data-full-width-responsive="true"><iframe id="aswift_0" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"><iframe id="google_ads_frame0"></iframe></iframe></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8642450972689048" crossorigin="anonymous"></script>
-<!-- right ads -->
-<ins class="adsbygoogle" data-ad-client="ca-pub-8642450972689048" data-ad-slot="9276582924" data-ad-format="auto" data-full-width-responsive="true"><iframe id="aswift_1" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"><iframe id="google_ads_frame1"></iframe></iframe></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+ 
 
 <div id="root" style="width: 428px; height: 642px;">
     <div id="intro" style="width: 428px; height: 642px;">
-        <img src="images/intro_bg.png" id="intro_bg">
+        
         <div id="main-settings" style="transform: scale(1.67188);">
-            <div id="captcha" style="transform: scale(calc(0.303333)); height: 65px; margin-top: -12.5391px; margin-bottom: -26.0938px;" class="h-captcha" data-theme="light" data-retry="never" data-sitekey="49043ad8-6b2d-4f6c-bfa5-a8c9f235e048" data-callback="setVerificationToken" data-error-callback="setVerificationToken"><iframe src="https://newassets.hcaptcha.com/captcha/v1/16b9ece/static/hcaptcha.html#frame=checkbox&amp;id=0810k36eco5w&amp;host=pict.chat&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=en&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=49043ad8-6b2d-4f6c-bfa5-a8c9f235e048&amp;theme=light&amp;origin=https%3A%2F%2Fpict.chat" tabindex="0" frameborder="0" scrolling="no" title="Widget containing checkbox for hCaptcha security challenge" data-hcaptcha-widget-id="0810k36eco5w" data-hcaptcha-response="" style="pointer-events: auto; width: 303px; height: 78px; overflow: hidden;"></iframe><textarea id="g-recaptcha-response-0810k36eco5w" name="g-recaptcha-response" style="display: none;"></textarea><textarea id="h-captcha-response-0810k36eco5w" name="h-captcha-response" style="display: none;"></textarea></div><!--0x4AAAAAAAE7tg6O9EI2mSfS-->
-            <img src="images/logo.png" id="logo" onclick="sounds.error.play()" title="Click to join PictoChat Session!" alt="Connect to PictoChat" style="margin-top: 18.5938px;">
+        
+            <h1 id="logo" onclick="sounds.error.play()" title="Click to join PictoChat Session!" alt="Connect to PictoChat" style="margin-top: 18.5938px;">PictoChat</h1> <html>
+  <head>
+
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="" method="POST">
+     
+      <div class="h-captcha" id="captcha" data-sitekey="985b9d70-7a74-46a2-975a-a74a5c2aa84f"></div>
+      <br />
+
+    </form>
+  </body>
+</html>
             <div class="intro-text">Username:</div>
             <input type="text" id="name_box" spellcheck="false" maxlength="10" onkeyup="fixUserbox(this)">
             <div class="intro-text">Color:</div>
@@ -270,15 +285,8 @@
 
         
       </div>
-            <img src="images/other_settings.png" id="other_settings" onclick="otherSettings()">
+          <h5 id="button" onclick="otherSettings()">Settings</h5>
             <br><br style="line-height: 0.5em;">
-            <a href="https://e.widgetbot.io/channels/1095389427657887807"><img src="images/discord.png" id="discord"></a>
-            <br>
-            <span style="font-family:nds;font-size:0.5em;">^ no discord account required + share your tripcodes! ^</span>
-            <br style="line-height: 0.5em;">
-            <a href="https://github.com/ayunami2000/ayunpictojava"><img src="images/github.png" id="github"></a>
-            <br><br style="line-height: 0.5em;">
-            <a href="https://ko-fi.com/ayunami2000"><img src="images/donate.png" id="donate"></a>
         </div>
     </div>
     <div id="settings" style="width: 428px; height: 642px;">
@@ -292,9 +300,7 @@
                 Volume</label><br>
             <label for="pressure"><input type="checkbox" id="pressure" onchange="pressure(this.checked)">
                 Pressure Support</label><br>
-            <label for="dark"><input type="checkbox" id="dark" onchange="dark(this.checked)">
-                Dark Mode</label>
-            <div id="settings-done"><img src="images/done.png" onclick="closeOtherSettings()"></div>
+          <div id="settings-done"><p onclick="closeOtherSettings()">Done</p></div>
         </div>
     </div>
     <input type="password" id="topy" style="display: none;" maxlength="0" autocorrect="off" autocapitalize="off" autocomplete="off">
